@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
 :root {
+  --accent: 168 85% 52%; /* teal accent */
   --background: #ffffff;
   --foreground: #171717;
+}
+
+.bg-accent {
+  background-color: hsl(var(--accent));
+}
+.text-accent {
+  color: hsl(var(--accent));
+}
+.ring-accent {
+  --tw-ring-color: hsl(var(--accent) / 0.45);
+}
+.border-accent {
+  border-color: hsl(var(--accent) / 0.35);
 }
 
 @theme inline {
@@ -22,5 +36,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
